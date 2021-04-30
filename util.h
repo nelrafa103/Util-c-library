@@ -18,7 +18,11 @@ int getch(void)
 }
 
 
-void color()
+void textcolor(char color *)
 {
+ if(color == 'RED')
+ {
 
+ }
+ lse ifelse ifnf
 }
