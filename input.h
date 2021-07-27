@@ -1,7 +1,8 @@
-void gotoxy(int x, int y)
-{
-    printf("%c[%d;%df", 0x1B, y, x);
-}
+/*
+Este archivo contiene las funciones que son para el manejo del mouse y del ..
+
+*/
+
 
 
 int getch(void)
@@ -18,11 +19,3 @@ int getch(void)
 }
 
 
-void textcolor(char color *)
-{
- if(color == 'RED')
- {
-
- }
- lse ifelse ifnf
-}
