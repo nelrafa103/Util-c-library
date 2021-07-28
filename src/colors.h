@@ -1,3 +1,4 @@
+#include <stdio.h>
 /* Background colors  */
 #define ANSI__RED__BACKGROUND "\033[1;41m"
 #define ANSI__GREEN__BACKGROUND "\033[1;42m"
@@ -9,10 +10,10 @@
 #define ANSI__RESET__BACKGROUND "\033[1;0m"
 
 /*Bright Backgroud colors */
- 
+
 /* Font colors */
 
-#define RED  "\x1B[31m"
+#define RED "\x1B[31m"
 #define GREEN "\x1B[32m"
 #define YELLOW "\x1B[33m"
 #define BLUE "\x1B[34m"
@@ -23,14 +24,14 @@
 
 /* Colors Abrevations */
 
-#define RED__ABR  'r'
-#define GREEN__ABR  'g'
-#define YELLOW__ABR  'y'
-#define BLUE__ABR   'b'
-#define MAGENTA__ABR 'm' 
-#define CYAN__ABR    'c'
-#define WHITE__ABR   'w'
-#define RESET__ABR  'n'
+#define RED__ABR 'r'
+#define GREEN__ABR 'g'
+#define YELLOW__ABR 'y'
+#define BLUE__ABR 'b'
+#define MAGENTA__ABR 'm'
+#define CYAN__ABR 'c'
+#define WHITE__ABR 'w'
+#define RESET__ABR 'n'
 
 /* backgroud recieve a char pointer as parameter and set the color as background 
 when the terminal is write in*/
@@ -38,39 +39,41 @@ void background(char *color)
 {
     switch (*color)
     {
-    case RED__ABR:
-        printf(ANSI__RED__BACKGROUND);
-
+    case 'r':
+        printf("\033[1;44m");
+        break;
     case BLUE__ABR:
         printf(ANSI__BLUE__BACKGROUND);
-
-   case GREEN__ABR:
+        break;
+    case GREEN__ABR:
         printf(ANSI__GREEN__BACKGROUND);
-
+        break;
     case CYAN__ABR:
         printf(ANSI__CYAN__BACKGROUND);
-
+        break;
     case MAGENTA__ABR:
         printf(ANSI__MAGENTA__BACKGROUND);
-
+        break;
     case WHITE__ABR:
         printf(ANSI__WHITE__BACKGROUND);
+        break;
     case YELLOW__ABR:
         printf(ANSI__YELLOW__BACKGROUND);
-
+        break;
     case RESET__ABR:
         printf(ANSI__RESET__BACKGROUND);
+        break;
     }
 }
 /*color() has a parameter (gets a abrevation)  */
-void color(char *color) 
+void color(char *color)
 {
-   switch (*color)
+    switch (*color)
     {
     case RED__ABR:
         printf(RED);
         break;
-    case  BLUE__ABR:
+    case BLUE__ABR:
         printf(BLUE);
         break;
     case GREEN__ABR:

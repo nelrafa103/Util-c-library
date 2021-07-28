@@ -1,9 +1,10 @@
+#include <termios.h>
+#include <unistd.h>
+#include <stdio.h>
 /*
 Este archivo contiene las funciones que son para el manejo del mouse y del ..
 
 */
-
-
 
 int getch(void)
 {

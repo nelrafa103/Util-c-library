@@ -1,12 +1,20 @@
-# libreria Util 
+# util library
 
- La libreria util trae a linux funciones exclusivas de windows de C.
+### Summary
+ The objetive of util librery is to port and give functional functions
  
- Funciones como: 
+ 
+### Functions:
 
-  - getch()
-  - gotoxy()
-  - textcolor()
-  - backgroundcolor()
-
-  ### Creado por Nelrafa103
+  - getch()         
+  - gotoxy()        
+  - color()         
+  - background()    
+  - cursor()
+  - cursor__color()
+  - size()
+  - font()
+  
+  
+  ### Credits
+  - Nelrafa103  

@@ -1,4 +1,6 @@
-void cursor(char *);
+#include <stdio.h>
+
+void cursor(char *,char *);
 void gotoxy(int,int);
 void cursor__color(char *);
 /*
@@ -10,23 +12,23 @@ void cursor__color(char *);
 
 /*cursor gets one parameter: 
 direction and doesnt not return any value*/
-void cursor(char *direction)
+void cursor(char *direction,char *steps)
 {
 
     switch (*direction)
     {
      
     case 'u':
-        printf("\033[1D");
+        printf("%s%s%s","\033[",steps,"D");
         break;
     case 'd':
-        printf("\033[1B");
+        printf("%s%s%s","\033[",steps,"B");
         break;
     case 'l':
-        printf("\033[1D");
+        printf("%s%s%s","\033[",steps,"D");
         break;
     case 'r':
-        printf("\033[1C");
+        printf("%s%s%s","\033[",steps,"C");
         break;
     }
 }
